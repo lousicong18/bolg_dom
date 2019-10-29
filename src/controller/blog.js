@@ -55,9 +55,9 @@ const getDetail = (id) =>{
         ]
 
 }
-
+//测试
 module.exports = {
     getList,
     getDetail
-    
+
 }

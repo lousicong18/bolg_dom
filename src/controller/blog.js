@@ -59,4 +59,5 @@ const getDetail = (id) =>{
 module.exports = {
     getList,
     getDetail
+    
 }

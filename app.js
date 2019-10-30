@@ -11,11 +11,9 @@ const serverHandle = (req,res) =>{
      req.path = url.split('?')[0];
 
      //解析query
-
      req.query = querystring.parse(url.split('?')[1])
 
     //处理 bolg 路由
-
     const blogData = handleBlogRouter(req,res)
     if(blogData){
         res.end(

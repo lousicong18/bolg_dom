@@ -55,9 +55,30 @@ const getDetail = (id) =>{
         ]
 
 }
+
+const newBlog = (blogData = {}) =>{
+    console.log('post data:' ,blogData )
+    return{
+        id:3, //返回新建的菜单
+    }
+}
+const updateBlog = (blogData = {}) =>{
+    //blogData.id 需要更新的id号
+    //blogData.blogData 更新的内容
+    console.log('post data:' ,blogData )
+    return true
+}
+const delBlog = (blogData = {}) =>{
+     //blogData.id 需要删除的id号
+    console.log('post data:' ,blogData )
+    return true
+}
 //测试
 module.exports = {
     getList,
-    getDetail
+    getDetail,
+    newBlog,
+    updateBlog,
+    delBlog
 
 }
